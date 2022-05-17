@@ -1,34 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![alt text](https://i.ibb.co/tYjJRSd/Screen-Shot-2022-05-12-at-5-33-26-PM.jpg)
 
-## Getting Started
+# Quiz Time: Video Game Ed.
 
-First, run the development server:
+- Intuitive trivia game that tests players on their knowledge of video games with a set of ten randomized questions retrieved from the Open Trivia API.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Request is made to Open Trivia endpoint when level of difficulty is selected. ​
+- Questions retrieved are dependent on the level of difficulty selected by the user and are randomized before rendering.
+- `useReducer` responsible for handling complex state management involving score keeping and quiz progression.
+- Flow of information through component tree powered via `useContext`.
+- Player cannot move onto the next question without making a selection, nor can a duplicate selection be made once answer is revealed.
+- Visual cues leveraged to alert the player if their selection is correct or incorrect, along with a monitoring system that tracks their progress with each question.
+- Results containing both the correct and incorrect answers are generated after last submission.
+- Player has the option to reset the results and play again.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Toolbox
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- ReactJS (Context & Hooks)
+- Sass
+- Axios
+- Open Trivia API
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Live Demo
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[Codepen](https://codepen.io/jordanutz/pen/mdOPWpE)

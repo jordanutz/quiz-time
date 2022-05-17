@@ -1,0 +1,28 @@
+@import "./globals.scss";
+
+.settings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  label {
+    font-weight: 600;
+  }
+
+  select {
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+    margin: 0 .5rem;
+    background-color: $active-status;
+    border: none;
+    cursor: pointer;
+    color: $white;
+    font-weight: 600;
+    font-family: inherit;
+  }
+
+  input[type="submit"] {
+    background-color: $active-status;
+  }
+}

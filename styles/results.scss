@@ -1,0 +1,33 @@
+@import "./globals.scss";
+
+.quiz-modal {
+  &__results-score {
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6.5rem;
+    font-weight: 900;
+    letter-spacing: -4.5px;
+    color: $secondary-color;
+
+    span {
+      font-size: 2rem;
+    }
+  }
+
+  &__results-details {
+    margin-bottom: 0;
+
+    p {
+      margin-bottom: 1rem;
+      font-size: 1.25rem;
+      font-weight: 600;
+
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+}

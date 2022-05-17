@@ -1,0 +1,76 @@
+@import "./globals.scss";
+
+.quiz-modal {
+  &__option {
+    padding: 1.5rem;
+    background-color: $accent;
+    color: $white;
+    border: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    transition: 0.3s all;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    font-family: $font-family;
+    font-size: 1rem;
+
+    &:hover {
+      background-color: $active-status;
+      color: $white;
+      font-weight: 500;
+    }
+
+    &:active,
+    &:focus {
+      outline: none;
+    }
+
+    &--correct {
+      background-color: $success-status !important;
+      color: $white !important;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: $white !important;
+        background-color: $success-status !important;
+      }
+    }
+
+    .quiz-modal .quiz-modal__body &--incorrect {
+      background-color: $error-status;
+      color: $white;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: $white;
+        background-color: $error-status;
+      }
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+
+  &__option[disabled] {
+    color: $disabled-text;
+
+    &:hover {
+      background: $accent;
+      color: $disabled-text;
+    }
+  }
+
+  &__option[disabled] {
+    color: $disabled-text;
+
+    &:hover {
+      background: $accent;
+      color: $disabled-text;
+    }
+  }
+}

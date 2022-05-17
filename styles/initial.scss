@@ -1,0 +1,27 @@
+@import "./globals.scss";
+
+.quiz-modal {
+  &__initial {
+    min-height: 375px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      margin: 0.5rem 0;
+      font-size: 1.15rem;
+    }
+
+    span {
+      font-size: 1rem;
+      color: $disabled-text;
+    }
+  }
+
+  &__initial-header {
+    margin: 0;
+    font-weight: 700;
+    font-size: 2.25rem;
+  }
+}

@@ -1,0 +1,23 @@
+@import "./globals.scss";
+
+.quiz-modal {
+  & &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    padding: 1rem 1.5rem;
+    border-bottom-left-radius: 0.375rem;
+    border-bottom-right-radius: 0.375rem;
+
+    @media (max-width: 767px) {
+      padding: 1.5rem 1rem;
+      flex-direction: column;
+    }
+
+    &--bg {
+      background-color: $secondary-color;
+      color: $white;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@import "./globals.scss";
+
+.quiz-modal {
+  &__progress-controls {
+    display: flex;
+    align-items: center;
+    margin: auto 0 auto auto;
+  }
+
+  &__progress-current {
+    margin: 0;
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+
+  .quiz-modal &__progress-alert {
+    font-weight: 500;
+    margin: 0;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 767px) {
+      padding-bottom: 0.75rem;
+    }
+
+    svg {
+      color: $white;
+      padding: 0.25rem;
+      border-radius: 50%;
+      margin: 0 0.75rem 0 0;
+    }
+
+    &--correct {
+      color: $success-status;
+
+      svg {
+        background: $success-status;
+      }
+    }
+
+    &--incorrect {
+      color: $error-status;
+
+      svg {
+        background: $error-status;
+      }
+    }
+  }
+}
